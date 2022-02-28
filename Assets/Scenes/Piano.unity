@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 360638162}
   - component: {fileID: 360638161}
   m_Layer: 0
-  m_Name: PianoHandler
+  m_Name: Piano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,36 +302,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab523010124af44cb575902fdbdf953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyC: {fileID: 1757417478}
-  keyCSharp: {fileID: 1013440349}
-  keyD: {fileID: 746466566}
-  keyDSharp: {fileID: 461927296}
-  keyE: {fileID: 1976697994}
-  keyF: {fileID: 1971462924}
-  keyFSharp: {fileID: 909451152}
-  keyG: {fileID: 192683601}
-  keyGSharp: {fileID: 1340318363}
-  keyA: {fileID: 260094999}
-  keyASharp: {fileID: 1543713251}
-  keyB: {fileID: 748810456}
-  soundC: {fileID: 8300000, guid: 5886ae58a14beb64aa9e874f6ffbd9b2, type: 3}
-  soundCSharp: {fileID: 8300000, guid: eacd4efb31bd6154ebaa10475d83fe06, type: 3}
-  soundD: {fileID: 8300000, guid: 54ebf207fe743fd418ae76b115ff60f6, type: 3}
-  soundDSharp: {fileID: 8300000, guid: eeeaa49964aa97341a479238237a27a6, type: 3}
-  soundE: {fileID: 8300000, guid: 4b6aae0a5ce3d014baf3b5c705ddf73c, type: 3}
-  soundF: {fileID: 8300000, guid: 6ef4ef73d6feaa54a908e03e136ee861, type: 3}
-  soundFSharp: {fileID: 8300000, guid: 0fc3455249e7f3f4c82aa3698d0c0ad8, type: 3}
-  soundG: {fileID: 8300000, guid: 89a5b5092c152f946aa5eba73b2b5f09, type: 3}
-  soundGSharp: {fileID: 8300000, guid: 4ac2dee4ef0572341823658d2a10f9d6, type: 3}
-  soundA: {fileID: 8300000, guid: c453d9fd1167bdb41b01ad2f009355a4, type: 3}
-  soundASharp: {fileID: 8300000, guid: 8ad0212c28b150d41b817b2dcf0eb3af, type: 3}
-  soundB: {fileID: 8300000, guid: 4c8ec3cdfc95f03469fd58a261790e13, type: 3}
-  player: {fileID: 898534588}
-  volume: 1
+  images:
+    c: {fileID: 1757417478}
+    cSharp: {fileID: 1013440349}
+    d: {fileID: 746466566}
+    dSharp: {fileID: 461927296}
+    e: {fileID: 1976697994}
+    f: {fileID: 1971462924}
+    fSharp: {fileID: 909451152}
+    g: {fileID: 192683601}
+    gSharp: {fileID: 1340318363}
+    a: {fileID: 260094999}
+    aSharp: {fileID: 1543713251}
+    b: {fileID: 748810456}
   whiteKeySprite: {fileID: 21300000, guid: 8b72dec4c5b4b9545afcb39ba281a08f, type: 3}
   blackKeySprite: {fileID: 21300000, guid: bc1a9b1c59434944faf7d54234d1c294, type: 3}
   pressedWhiteKeySprite: {fileID: 21300000, guid: 6f4f0c6d096bd35489c8f2bad9a83821, type: 3}
   pressedBlackKeySprite: {fileID: 21300000, guid: 103387f17cf0826489e2ba1da4681036, type: 3}
+  player: {fileID: 898534588}
+  volume: 1
+  octave:
+    c: {fileID: 8300000, guid: 5886ae58a14beb64aa9e874f6ffbd9b2, type: 3}
+    cSharp: {fileID: 8300000, guid: eacd4efb31bd6154ebaa10475d83fe06, type: 3}
+    d: {fileID: 8300000, guid: 54ebf207fe743fd418ae76b115ff60f6, type: 3}
+    dSharp: {fileID: 8300000, guid: eeeaa49964aa97341a479238237a27a6, type: 3}
+    e: {fileID: 8300000, guid: 4b6aae0a5ce3d014baf3b5c705ddf73c, type: 3}
+    f: {fileID: 8300000, guid: 6ef4ef73d6feaa54a908e03e136ee861, type: 3}
+    fSharp: {fileID: 8300000, guid: 0fc3455249e7f3f4c82aa3698d0c0ad8, type: 3}
+    g: {fileID: 8300000, guid: 89a5b5092c152f946aa5eba73b2b5f09, type: 3}
+    gSharp: {fileID: 8300000, guid: 4ac2dee4ef0572341823658d2a10f9d6, type: 3}
+    a: {fileID: 8300000, guid: c453d9fd1167bdb41b01ad2f009355a4, type: 3}
+    aSharp: {fileID: 8300000, guid: 8ad0212c28b150d41b817b2dcf0eb3af, type: 3}
+    b: {fileID: 8300000, guid: 4c8ec3cdfc95f03469fd58a261790e13, type: 3}
 --- !u!4 &360638162
 Transform:
   m_ObjectHideFlags: 0
@@ -432,7 +434,7 @@ GameObject:
   - component: {fileID: 463317472}
   - component: {fileID: 463317471}
   m_Layer: 0
-  m_Name: PianoListener
+  m_Name: KeyListener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,14 +449,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 463317470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 872846fedfff2bf4395169d4eaf6b4b3, type: 3}
+  m_Script: {fileID: 11500000, guid: c730018f0c2b10a45a7879c23ef844f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onKeyDown:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 360638161}
-        m_TargetAssemblyTypeName: PianoHandler, Assembly-CSharp
+        m_TargetAssemblyTypeName: Piano.Piano, Assembly-CSharp
         m_MethodName: OnKeyDown
         m_Mode: 0
         m_Arguments:
@@ -469,7 +471,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 360638161}
-        m_TargetAssemblyTypeName: PianoHandler, Assembly-CSharp
+        m_TargetAssemblyTypeName: Piano.Piano, Assembly-CSharp
         m_MethodName: OnKeyUp
         m_Mode: 0
         m_Arguments:
@@ -738,7 +740,7 @@ GameObject:
   - component: {fileID: 898534589}
   - component: {fileID: 898534588}
   m_Layer: 5
-  m_Name: AudioSource
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
