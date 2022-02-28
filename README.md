@@ -11,16 +11,28 @@
 ### Key bindings
 
 <table>
-<tr><td>Q</td><td>C5 </td></tr>
-<tr><td>2</td><td>C#5</td></tr>
-<tr><td>W</td><td>D5 </td></tr>
-<tr><td>3</td><td>D#5</td></tr>
-<tr><td>E</td><td>E5 </td></tr>
-<tr><td>R</td><td>F5 </td></tr>
-<tr><td>5</td><td>F#5</td></tr>
-<tr><td>T</td><td>G5 </td></tr>
-<tr><td>6</td><td>G#5</td></tr>
-<tr><td>Y</td><td>A5 </td></tr>
-<tr><td>7</td><td>A#5</td></tr>
-<tr><td>U</td><td>B5 </td></tr>
+  <tr>
+    <td><kbd>Q</kbd></td><td>C5</td></tr>
+  <tr>
+    <td><kbd>2</kbd></td><td>C#5</td></tr>
+  <tr>
+    <td><kbd>W</kbd></td><td>D5</td></tr>
+  <tr>
+    <td><kbd>3</kbd></td><td>D#5</td></tr>
+  <tr>
+    <td><kbd>E</kbd></td><td>E5</td></tr>
+  <tr>
+    <td><kbd>R</kbd></td><td>F5</td></tr>
+  <tr>
+    <td><kbd>5</kbd></td><td>F#5</td></tr>
+  <tr>
+    <td><kbd>T</kbd></td><td>G5</td></tr>
+  <tr>
+    <td><kbd>6</kbd></td><td>G#5</td></tr>
+  <tr>
+    <td><kbd>Y</kbd></td><td>A5</td></tr>
+  <tr>
+    <td><kbd>7</kbd></td><td>A#5</td></tr>
+  <tr>
+    <td><kbd>U</kbd></td><td>B5</td></tr>
 </table>
